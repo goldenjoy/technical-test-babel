@@ -19,7 +19,7 @@ public class SwaggerConfig {
                         .description("API REST para administrar empleados")
                         .contact(new Contact()
                                 .name("Babel Sistemas de Información")
-                                .email("contacto@babel.com"))
+                                .email("santiago.michael.es@gmail.com"))
                         .license(new License()
                                 .name("Apache 2.0")
                                 .url("https://www.apache.org/licenses/LICENSE-2.0")));

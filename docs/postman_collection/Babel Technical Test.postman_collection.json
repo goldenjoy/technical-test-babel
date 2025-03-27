@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "d7b372f2-860c-44c9-b9aa-fbd56311df8d",
+		"name": "Babel Technical Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1292185"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los empleados",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un empleado por ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/empleados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un empleado por ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"primerNombre\": \"Juan 4.1\",\r\n    \"segundoNombre\": \"Carlos 4.1\",\r\n    \"apellidoPaterno\": \"Pérez 4.1\",\r\n    \"apellidoMaterno\": \"López 4.1\",\r\n    \"edad\": 34,\r\n    \"sexo\": \"O\",\r\n    \"fechaNacimiento\": \"1993-05-17\",\r\n    \"puesto\": \"Desarrollador  4.1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/empleados/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleados",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registra uno o múltiples empleados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"empleados\": [\r\n    {\r\n      \"primerNombre\": \"Juan 4\",\r\n      \"segundoNombre\": \"Carlos 4\",\r\n      \"apellidoPaterno\": \"Pérez 4\",\r\n      \"apellidoMaterno\": \"López 4\",\r\n      \"edad\": 30,\r\n      \"sexo\": \"M\",\r\n      \"fechaNacimiento\": \"1993-05-15\",\r\n      \"puesto\": \"Desarrollador\"\r\n    },\r\n    {\r\n      \"primerNombre\": \"Juan5\",\r\n      \"segundoNombre\": \"Carlos5\",\r\n      \"apellidoPaterno\": \"Pérez5\",\r\n      \"apellidoMaterno\": \"López5\",\r\n      \"edad\": 30,\r\n      \"sexo\": \"M\",\r\n      \"fechaNacimiento\": \"1993-05-15\",\r\n      \"puesto\": \"Desarrollador\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
